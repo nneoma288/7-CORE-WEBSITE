@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Core – BTS Fan Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-7">7</span> CORE
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#members" class="nav-link">Members</a></li>
+        <li><a href="#discography" class="nav-link">Music</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#timeline" class="nav-link">Timeline</a></li>
+        <li><a href="#fanzone" class="nav-link">Fan Zone</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">🌟 THE GLOBAL PHENOMENON</div>
+      <h1 class="hero-title animate-on-scroll">
+        <span class="hero-title-line">BANGTAN</span>
+        <span class="hero-title-line hero-title-accent">SONYEONDAN</span>
+      </h1>
+      <p class="hero-subtitle animate-on-scroll">Seven voices. One heartbeat. Infinite ARMY.</p>
+      <div class="hero-buttons animate-on-scroll">
+        <a href="#members" class="btn btn-primary">Meet the Members</a>
+        <a href="#discography" class="btn btn-outline">Explore Music</a>
+      </div>
+      <div class="hero-stats animate-on-scroll">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="40">0</span>M+
+          <span class="hero-stat-label">Albums Sold</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="700">0</span>M+
+          <span class="hero-stat-label">YouTube Views</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="50">0</span>M+
+          <span class="hero-stat-label">ARMY Worldwide</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">WHO ARE THEY</span>
+        <h2 class="section-title">More Than <span class="text-red">Music</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll">
+          <div class="about-image-frame">
+            <img src="http://static.photos/people/640x360/77" alt="BTS Group Photo" loading="lazy">
+            <div class="about-image-glow"></div>
+          </div>
+        </div>
+        <div class="about-content animate-on-scroll">
+          <h3>From Seoul to the World Stage</h3>
+          <p>BTS (Bangtan Sonyeondan), also known as the Bulletproof Boy Scouts, debuted on June 13, 2013, under Big Hit Entertainment. What started as a small hip-hop group from South Korea has evolved into the biggest musical act on the planet.</p>
+          <p>Their music speaks to the struggles of youth, mental health, self-love, and societal pressures — resonating with millions across language barriers. They've shattered records, redefined K-pop, and proved that music truly has no borders.</p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <div class="highlight-icon">🎤</div>
+              <span>Genre-Bending Music</span>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">💫</div>
+              <span>Self-Produced Art</span>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">🌍</div>
+              <span>Global Ambassadors</span>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">💜</div>
+              <span>ARMY Community</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Members Section -->
+  <section class="members section" id="members">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">THE SEVEN</span>
+        <h2 class="section-title">Meet the <span class="text-red">Members</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="members-grid">
+
+        <div class="member-card animate-on-scroll" data-member="rm">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/101" alt="RM" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">RM</h3>
+                <p class="member-role">Leader · Main Rapper</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>RM (Kim Nam-joon)</h3>
+                <p class="member-birthday">🎂 September 12, 1994</p>
+                <p>The brilliant leader with an IQ of 148. A wordsmith who turned his struggles into poetry that touches millions. Known as the "God of Destruction" for his clumsy moments.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Loves collecting figurines & has a bear brick collection!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card animate-on-scroll" data-member="jin">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/102" alt="Jin" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">JIN</h3>
+                <p class="member-role">Sub Vocalist · Visual</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>Jin (Kim Seok-jin)</h3>
+                <p class="member-birthday">🎂 December 4, 1992</p>
+                <p>Worldwide Handsome! The oldest hyung with a voice like honey and jokes that never miss. His shoulder width is legendary, and his cooking skills are top-tier.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Owns a restaurant called Ossu! Seiyo in Japan!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card animate-on-scroll" data-member="suga">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/103" alt="Suga" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">SUGA</h3>
+                <p class="member-role">Lead Rapper · Producer</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>Suga (Min Yoon-gi)</h3>
+                <p class="member-birthday">🎂 March 9, 1993</p>
+                <p>The silent genius producer. Agust D — a rapper who bleeds raw emotion into every verse. Produces, writes, and pours his soul into music that heals others.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Sleeps anywhere, anytime — the ultimate nap champion!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card animate-on-scroll" data-member="jhope">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/104" alt="J-Hope" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">J-HOPE</h3>
+                <p class="member-role">Main Dancer · Sub Rapper</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>J-Hope (Jung Ho-seok)</h3>
+                <p class="member-birthday">🎂 February 18, 1994</p>
+                <p>BTS's sunshine and dance captain. From Gwangju to global stages, his energy is unmatched. His mixtape "Hope World" and album "Jack In The Box" show his artistry depth.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Known for his iconic "I'm your hope" intro — pure energy!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card animate-on-scroll" data-member="jimin">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/105" alt="Jimin" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">JIMIN</h3>
+                <p class="member-role">Main Vocalist · Main Dancer</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>Jimin (Park Ji-min)</h3>
+                <p class="member-birthday">🎂 October 13, 1995</p>
+                <p>The ethereal performer with a voice that reaches the soul. From contemporary dance to vocal perfection — every stage is a masterpiece. "Set Me Free" proves his solo power.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Practices choreo until perfection — the ultimate perfectionist!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card animate-on-scroll" data-member="v">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/106" alt="V" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">V</h3>
+                <p class="member-role">Sub Vocalist · Visual</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>V (Kim Tae-hyung)</h3>
+                <p class="member-birthday">🎂 December 30, 1995</p>
+                <p>The multi-talented artist with a deep, soulful baritone. Painter, actor, photographer, and fashion icon. His solo works "Love Me Again" & "Rainy Days" captivated the world.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Absolutely adores his dog Yeontan — the cutest duo ever!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card animate-on-scroll" data-member="jungkook">
+          <div class="member-card-inner">
+            <div class="member-card-front">
+              <div class="member-image">
+                <img src="http://static.photos/people/320x240/107" alt="Jungkook" loading="lazy">
+                <div class="member-image-overlay"></div>
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">JUNGKOOK</h3>
+                <p class="member-role">Main Vocalist · Golden Maknae</p>
+                <div class="member-hover-hint">Hover to reveal →</div>
+              </div>
+            </div>
+            <div class="member-card-back">
+              <div class="member-back-content">
+                <h3>Jungkook (Jeon Jung-kook)</h3>
+                <p class="member-birthday">🎂 September 1, 1997</p>
+                <p>The Golden Maknae — good at everything he touches. From vocals to dance, sports to art, he's the complete package. His solo album "GOLDEN" broke countless records worldwide.</p>
+                <div class="member-fun-fact">
+                  <span class="fun-fact-label">Fun Fact</span>
+                  <span>Can learn any skill in record time — truly golden!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Discography Section -->
+  <section class="discography section" id="discography">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">DISCOGRAPHY</span>
+        <h2 class="section-title">Their <span class="text-red">Music</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="discography-tabs animate-on-scroll">
+        <button class="tab-btn active" data-tab="korean">Korean Albums</button>
+        <button class="tab-btn" data-tab="japanese">Japanese Albums</button>
+        <button class="tab-btn" data-tab="solo">Solo Works</button>
+      </div>
+      <div class="tab-content active" id="tab-korean">
+        <div class="album-grid">
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/201" alt="2 Cool 4 Skool" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>2 Cool 4 Skool</h4>
+              <p>2013 · Single Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/202" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Wings</h4>
+              <p>2016 · Studio Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/203" alt="Love Yourself: Tear" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Love Yourself: Tear</h4>
+              <p>2018 · Studio Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/204" alt="Map of the Soul: 7" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Map of the Soul: 7</h4>
+              <p>2020 · Studio Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/205" alt="BE" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>BE</h4>
+              <p>2020 · Studio Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/206" alt="Proof" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Proof</h4>
+              <p>2022 · Anthology Album</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-japanese">
+        <div class="album-grid">
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/301" alt="Face Yourself" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Face Yourself</h4>
+              <p>2018 · Studio Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/302" alt="BTS, THE BEST" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>BTS, THE BEST</h4>
+              <p>2021 · Compilation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-solo">
+        <div class="album-grid">
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/401" alt="Indigo" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>RM – Indigo</h4>
+              <p>2022 · Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/402" alt="D-Day" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Suga – D-Day</h4>
+              <p>2023 · Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/403" alt="Jack In The Box" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>J-Hope – Jack In The Box</h4>
+              <p>2022 · Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/404" alt="FACE" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Jimin – FACE</h4>
+              <p>2023 · Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/405" alt="Layover" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>V – Layover</h4>
+              <p>2023 · Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="http://static.photos/abstract/320x240/406" alt="GOLDEN" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Jungkook – GOLDEN</h4>
+              <p>2023 · Album</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">RECORDS & MILESTONES</span>
+        <h2 class="section-title">Their <span class="text-red">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card animate-on-scroll">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-number" data-target="800">0</div>
+          <div class="achievement-label">Music Awards</div>
+          <div class="achievement-glow"></div>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <div class="achievement-icon">🎵</div>
+          <div class="achievement-number" data-target="6">0</div>
+          <div class="achievement-label">Billboard #1 Entries</div>
+          <div class="achievement-glow"></div>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <div class="achievement-icon">🎤</div>
+          <div class="achievement-number" data-target="300">0</div>
+          <div class="achievement-label">Concerts Performed</div>
+          <div class="achievement-glow"></div>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <div class="achievement-icon">🌍</div>
+          <div class="achievement-number" data-target="40">0</div>
+          <div class="achievement-label">Countries Toured</div>
+          <div class="achievement-glow"></div>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <div class="achievement-icon">💜</div>
+          <div class="achievement-number" data-target="45">0</div>
+          <div class="achievement-label">Million Albums Sold (2023)</div>
+          <div class="achievement-glow"></div>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <div class="achievement-icon">📢</div>
+          <div class="achievement-number" data-target="5">0</div>
+          <div class="achievement-label">UN Speeches</div>
+          <div class="achievement-glow"></div>
+        </div>
+      </div>
+      <div class="achievement-milestones animate-on-scroll">
+        <div class="milestone">
+          <span class="milestone-year">2018</span>
+          <span class="milestone-text">First Korean act to top Billboard 200</span>
+        </div>
+        <div class="milestone">
+          <span class="milestone-year">2019</span>
+          <span class="milestone-text">Sold out Wembley Stadium — 2 nights</span>
+        </div>
+        <div class="milestone">
+          <span class="milestone-year">2020</span>
+          <span class="milestone-text">First all-South Korean act nominated for Grammy</span>
+        </div>
+        <div class="milestone">
+          <span class="milestone-year">2021</span>
+          <span class="milestone-text">UN SDG — "Youth Ambassador" appointment</span>
+        </div>
+        <div class="milestone">
+          <span class="milestone-year">2023</span>
+          <span class="milestone-text">All 7 members enter solo era — global domination</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline section" id="timeline">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">JOURNEY</span>
+        <h2 class="section-title">Their <span class="text-red">Story</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2013</span>
+            <h4>Debut with "2 Cool 4 Skool"</h4>
+            <p>Seven boys from different walks of life come together under Big Hit Entertainment. The beginning of something extraordinary.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2015</span>
+            <h4>"I Need U" — First Win</h4>
+            <p>The turning point. The Most Beautiful Moment in Life series launches BTS from rookies to rising stars.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2016</span>
+            <h4>Wings — Global Breakthrough</h4>
+            <p>Wings becomes the highest-charting K-pop album on Billboard 200 at the time. BTS spreads their wings.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2018</span>
+            <h4>Love Yourself — Historic #1</h4>
+            <p>"Tear" becomes the first Korean album to reach #1 on Billboard 200. The UN speech inspires millions with "Speak Yourself."</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020</span>
+            <h4>"Dynamite" — Global Explosion</h4>
+            <p>First Korean act to hit #1 on Hot 100. "Dynamite" lights up the world during dark times. Map of the Soul: 7 makes history.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h4>Proof & Chapter 2 Begins</h4>
+            <p>The anthology album "Proof" marks the end of Chapter 1. Each member begins their solo journey.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023–2025</span>
+            <h4>Solo Eras & Military Service</h4>
+            <p>All 7 members shine individually. Solo albums break records. Serving their country while ARMY waits with purple hearts.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot future-dot"></div>
+          <div class="timeline-content future-content">
+            <span class="timeline-year">2025+</span>
+            <h4>The Reunion Awaits 💜</h4>
+            <p>When seven become one again... the world will feel the BTS effect once more. The best is yet to come.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fan Zone Section -->
+  <section class="fanzone section" id="fanzone">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">INTERACTIVE</span>
+        <h2 class="section-title">Fan <span class="text-red">Zone</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="fanzone-grid">
+        <!-- Quote Generator -->
+        <div class="fanzone-card animate-on-scroll">
+          <div class="fanzone-card-header">
+            <span class="fanzone-icon">💬</span>
+            <h3>BTS Quotes</h3>
+          </div>
+          <div class="quote-display" id="quoteDisplay">
+            <p class="quote-text" id="quoteText">"Life is tough, and things don't always work out well, but we should be brave and go on with our lives."</p>
+            <span class="quote-author" id="quoteAuthor">— Suga</span>
+          </div>
+          <button class="btn btn-primary btn-sm" id="newQuoteBtn">New Quote</button>
+        </div>
+
+        <!-- Which Member Are You -->
+        <div class="fanzone-card animate-on-scroll">
+          <div class="fanzone-card-header">
+            <span class="fanzone-icon">🔮</span>
+            <h3>Which Member Are You?</h3>
+          </div>
+          <p class="fanzone-description">Click to find out your BTS soulmate!</p>
+          <div class="member-result" id="memberResult" style="display:none;">
+            <h4 id="memberResultName"></h4>
+            <p id="memberResultTrait"></p>
+          </div>
+          <button class="btn btn-primary btn-sm" id="revealMemberBtn">Reveal Your Match</button>
+        </div>
+
+        <!-- ARMY Counter -->
+        <div class="fanzone-card animate-on-scroll">
+          <div class="fanzone-card-header">
+            <span class="fanzone-icon">💜</span>
+            <h3>ARMY Pledge</h3>
+          </div>
+          <p class="fanzone-description">Join the purple ocean!</p>
+          <div class="army-counter" id="armyCounter">
+            <span class="army-count" id="armyCount">7,492,381</span>
+            <span class="army-label">ARMYs have pledged</span>
+          </div>
+          <button class="btn btn-primary btn-sm" id="pledgeBtn">I'm ARMY 💜</button>
+        </div>
+      </div>
+
+      <!-- BTS Trivia Quiz -->
+      <div class="trivia-section animate-on-scroll">
+        <h3 class="trivia-title">⚡ BTS Trivia Challenge</h3>
+        <div class="trivia-container" id="triviaContainer">
+          <div class="trivia-question" id="triviaQuestion">
+            <p id="questionText"></p>
+          </div>
+          <div class="trivia-options" id="triviaOptions"></div>
+          <div class="trivia-score" id="triviaScore" style="display:none;">
+            <span id="scoreText"></span>
+            <button class="btn btn-primary btn-sm" id="playAgainBtn">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo"><span class="logo-7">7</span> CORE</a>
+          <p>A fan-made tribute celebrating the music, message, and magic of BTS. Made with 💜 by ARMY, for ARMY.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About BTS</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#discography">Music</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Official BTS</h4>
+          <div class="social-links">
+            <a href="https://www.youtube.com/@BTS" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a>
+            <a href="https://twitter.com/bts_bighit" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📷</a>
+            <a href="https://weverse.io/bts" target="_blank" rel="noopener" class="social-link" aria-label="Weverse">💜</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 7 Core Fan Website. Not affiliated with BigHit Music / HYBE. All rights to BTS content belong to their respective owners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
