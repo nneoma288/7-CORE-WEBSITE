@@ -28,6 +28,26 @@
     --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   
+  /* ---------- Light Mode Variables ---------- */
+  .light-mode {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f0f0;
+    --red: #e63946;
+    --red-dark: #c1121f;
+    --red-glow: rgba(230, 57, 70, 0.2);
+    --red-glow-soft: rgba(230, 57, 70, 0.06);
+    --purple: #7c3aed;
+    --purple-glow: rgba(124, 58, 237, 0.12);
+    --text-primary: #111111;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+    --text-dim: #999999;
+    --border: #e0e0e0;
+    --border-light: #d0d0d0;
+  }
+  
   /* ---------- Reset & Base ---------- */
   *,
   *::before,
@@ -50,6 +70,7 @@
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.4s ease, color 0.4s ease;
   }
   
   a {
@@ -313,6 +334,38 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
+  /* ---------- Theme Toggle Button ---------- */
+  .theme-toggle {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+  
+  .theme-toggle:hover {
+    border-color: var(--red);
+    box-shadow: 0 0 20px var(--red-glow-soft);
+    transform: rotate(20deg);
+  }
+  
+  .theme-toggle-icon {
+    line-height: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle:hover .theme-toggle-icon {
+    transform: scale(1.15);
+  }                                                                                                                                      
+  
   /* ---------- Hero Section ---------- */
   .hero {
     min-height: 100vh;
@@ -329,7 +382,7 @@
   .hero-bg-overlay {
     position: absolute;
     inset: 0;
-    background: url('http://static.photos/abstract/1200x630/500') center/cover no-repeat;
+    background: url('') center/cover no-repeat;
     opacity: 0.08;
     filter: blur(2px);
   }
@@ -1500,6 +1553,13 @@
       padding: 0 16px;
     }
   
+    .theme-toggle {
+      width: 36px;
+      height: 36px;
+      font-size: 1rem;
+      margin-right: 4px;
+    }
+  
     .section {
       padding: 64px 0;
     }
@@ -1588,4 +1648,104 @@
   
   ::-webkit-scrollbar-thumb:hover {
     background: var(--red);
+  }
+  
+  /* ============================================
+     Light Mode Specific Overrides
+     ============================================ */
+  
+  /* Hero - softer gradient in light mode */
+  .light-mode .hero {
+    background: radial-gradient(ellipse at center bottom, rgba(230, 57, 70, 0.04) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(124, 58, 237, 0.03) 0%, transparent 50%),
+                var(--bg-primary);
+  }
+  
+  /* Navbar - light blurred background when scrolled */
+  .light-mode .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom-color: var(--border);
+  }
+  
+  /* Hero title accent - softer glow in light mode */
+  .light-mode .hero-title-accent {
+    text-shadow: 0 0 40px var(--red-glow), 0 0 80px rgba(230, 57, 70, 0.08);
+  }
+  
+  /* Section backgrounds - light mid-gradient instead of dark */
+  .light-mode .members {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, #ebebeb 50%, var(--bg-primary) 100%);
+  }
+  
+  .light-mode .achievements {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, #ebebeb 50%, var(--bg-primary) 100%);
+  }
+  
+  .light-mode .fanzone {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, #ebebeb 50%, var(--bg-primary) 100%);
+  }
+  
+  /* Member card back - soft pink tint instead of dark red */
+  .light-mode .member-card-back {
+    background: linear-gradient(135deg, var(--bg-card) 0%, #fce8ea 100%);
+    box-shadow: 0 0 30px rgba(230, 57, 70, 0.06);
+  }
+  
+  /* Member image overlay - use card bg for gradient */
+  .light-mode .member-image-overlay {
+    background: linear-gradient(to top, var(--bg-card), transparent);
+  }
+  
+  /* Future timeline content - soft purple tint */
+  .light-mode .future-content {
+    background: linear-gradient(135deg, var(--bg-card) 0%, #ede9fe 100%);
+  }
+  
+  /* Quote display - very subtle red tint */
+  .light-mode .quote-display {
+    background: rgba(230, 57, 70, 0.03);
+  }
+  
+  /* Album play overlay - softer in light mode */
+  .light-mode .album-play-overlay {
+    background: rgba(230, 57, 70, 0.15);
+  }
+  
+  /* Soft shadows instead of glows in light mode */
+  .light-mode .achievement-card,
+  .light-mode .album-card,
+  .light-mode .timeline-content,
+  .light-mode .fanzone-card,
+  .light-mode .trivia-section {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .light-mode .about-image-frame {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  .light-mode .highlight {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Scrollbar - light mode */
+  .light-mode ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  .light-mode ::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 4px;
+  }
+  
+  .light-mode ::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+  }
+  
+  /* Mobile nav panel - light background */
+  @media (max-width: 768px) {
+    .light-mode .nav-links {
+      background: rgba(255, 255, 255, 0.97);
+      border-left-color: var(--border);
+    }
   }
