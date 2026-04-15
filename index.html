@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>(function(){if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light-mode')})()</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>7 Core – BTS Fan Website</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Custom Cursor -->
+  <!-- Custom Cursor --> 
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
@@ -30,6 +31,9 @@
         <li><a href="#timeline" class="nav-link">Timeline</a></li>
         <li><a href="#fanzone" class="nav-link">Fan Zone</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch theme" title="Switch Theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -85,7 +89,7 @@
       <div class="about-grid">
         <div class="about-image animate-on-scroll">
           <div class="about-image-frame">
-            <img src="http://static.photos/people/640x360/77" alt="BTS Group Photo" loading="lazy">
+            <img src="images - Copy/bts.jpeg" alt="BTS Group Photo" loading="lazy">
             <div class="about-image-glow"></div>
           </div>
         </div>
@@ -130,7 +134,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/101" alt="RM" loading="lazy">
+                <img src="images - Copy/RM.jpeg" alt="RM" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -157,7 +161,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/102" alt="Jin" loading="lazy">
+                <img src="images - Copy/jin.jpeg" alt="Jin" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -184,7 +188,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/103" alt="Suga" loading="lazy">
+                <img src="images - Copy/suga.jpeg" alt="Suga" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -211,7 +215,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/104" alt="J-Hope" loading="lazy">
+                <img src="images - Copy/Jhope.jpeg" alt="J-Hope" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -238,7 +242,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/105" alt="Jimin" loading="lazy">
+                <img src="images - Copy/jimin.jpeg" alt="Jimin" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -265,7 +269,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/106" alt="V" loading="lazy">
+                <img src="images - Copy/v.jpeg" alt="V" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -292,7 +296,7 @@
           <div class="member-card-inner">
             <div class="member-card-front">
               <div class="member-image">
-                <img src="http://static.photos/people/320x240/107" alt="Jungkook" loading="lazy">
+                <img src="images - Copy/jk.jpeg" alt="Jungkook" loading="lazy">
                 <div class="member-image-overlay"></div>
               </div>
               <div class="member-info">
@@ -336,7 +340,7 @@
         <div class="album-grid">
           <div class="album-card animate-on-scroll">
             <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/201" alt="2 Cool 4 Skool" loading="lazy">
+              <img src="images - Copy/2koolforskul.jpeg" alt="2 Cool 4 Skool" loading="lazy">
               <div class="album-play-overlay"><span>▶</span></div>
             </div>
             <div class="album-info">
@@ -346,141 +350,253 @@
           </div>
           <div class="album-card animate-on-scroll">
             <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/202" alt="Wings" loading="lazy">
+              <img src="images - Copy/oru.jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>O!RUL8,2?</h4>
+              <p>2013 · 1st Mini Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/skoolluvaffair.jpeg" alt="Love Yourself: Tear" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Skool Luv Affair</h4>
+              <p>2014 · 2nd Mini Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/darkandwild.jpeg" alt="Map of the Soul: 7" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Dark & Wild</h4>
+              <p>2014 · 1st Studio Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/mbmilpt 1.jpeg" alt="BE" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>The Most Beautiful Moment in Life Pt. 1</h4>
+              <p>2015 · 3rd Mini Album</p>
+            </div>
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/mbmilpt 2.jpeg" alt="Proof" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>The Most Beautiful Moment in Life Pt. 2</h4>
+              <p>2015 · 4th Mini Album</p>
+              
+            </div>
+            
+          </div>
+          <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/mbmil young forever.jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>The Most Beautiful Moment in Life: Young Forever</h4>
+              <p>2016 · Special Album</p>
+            </div>
+        </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/wings.jpeg" alt="Wings" loading="lazy">
               <div class="album-play-overlay"><span>▶</span></div>
             </div>
             <div class="album-info">
               <h4>Wings</h4>
-              <p>2016 · Studio Album</p>
+              <p>2016 · 2nd Studio Album</p>
             </div>
-          </div>
-          <div class="album-card animate-on-scroll">
+        </div>
+        <div class="album-card animate-on-scroll">
             <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/203" alt="Love Yourself: Tear" loading="lazy">
+              <img src="images - Copy/never walk alone.jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>You Never Walk Alone</h4>
+              <p>2017 · Repackage</p>
+            </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/ly her .jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Love Yourself: Her</h4>
+              <p>2017 · 5th Mini Album</p>
+            </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/ly tear.jpeg" alt="Wings" loading="lazy">
               <div class="album-play-overlay"><span>▶</span></div>
             </div>
             <div class="album-info">
               <h4>Love Yourself: Tear</h4>
-              <p>2018 · Studio Album</p>
+              <p>2018 · 3rd Studio Album</p>
             </div>
-          </div>
-          <div class="album-card animate-on-scroll">
+        </div>
+        <div class="album-card animate-on-scroll">
             <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/204" alt="Map of the Soul: 7" loading="lazy">
+              <img src="images - Copy/ly answer.jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Love Yourself: Answer</h4>
+              <p>2018 · Repackage</p>
+            </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/mos persona.jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>Map of the Soul: Persona</h4>
+              <p>2019 · 6th Mini Album</p>
+            </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/mos 7.jpeg" alt="Wings" loading="lazy">
               <div class="album-play-overlay"><span>▶</span></div>
             </div>
             <div class="album-info">
               <h4>Map of the Soul: 7</h4>
-              <p>2020 · Studio Album</p>
+              <p>2020 · 4th Studio Album</p>
             </div>
-          </div>
-          <div class="album-card animate-on-scroll">
+        </div>
+        <div class="album-card animate-on-scroll">
             <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/205" alt="BE" loading="lazy">
+              <img src="images - Copy/BE.jpeg" alt="Wings" loading="lazy">
               <div class="album-play-overlay"><span>▶</span></div>
             </div>
             <div class="album-info">
               <h4>BE</h4>
-              <p>2020 · Studio Album</p>
+              <p>2020 · 5th Studio Album</p>
             </div>
-          </div>
-          <div class="album-card animate-on-scroll">
+        </div>
+        <div class="album-card animate-on-scroll">
             <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/206" alt="Proof" loading="lazy">
+              <img src="images - Copy/proof.jpeg" alt="Wings" loading="lazy">
               <div class="album-play-overlay"><span>▶</span></div>
             </div>
             <div class="album-info">
               <h4>Proof</h4>
               <p>2022 · Anthology Album</p>
             </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+            <div class="album-cover">
+              <img src="images - Copy/arirang.jpeg" alt="Wings" loading="lazy">
+              <div class="album-play-overlay"><span>▶</span></div>
+            </div>
+            <div class="album-info">
+              <h4>ARIRANG</h4>
+              <p>2026 · 6th Studio Album</p>
+            </div>
+        </div>
+    
+      </div>
+    <div class="tab-content active" id="tab-japanese">
+      <div class="album-grid">
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="images - Copy/arirang.jpeg" alt="Wake Up" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
+          </div>
+          <div class="album-info">
+            <h4>Wake Up</h4>
+            <p>2014 · Studio Album</p>
+          </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/302" alt="BTS, THE BEST" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
+          </div>
+          <div class="album-info">
+            <h4>BTS, THE BEST</h4>
+            <p>2021 · Compilation</p>
           </div>
         </div>
       </div>
-      <div class="tab-content" id="tab-japanese">
-        <div class="album-grid">
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/301" alt="Face Yourself" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>Face Yourself</h4>
-              <p>2018 · Studio Album</p>
-            </div>
+    </div>
+    <div class="tab-content" id="tab-solo">
+      <div class="album-grid">
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/401" alt="Indigo" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
           </div>
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/302" alt="BTS, THE BEST" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>BTS, THE BEST</h4>
-              <p>2021 · Compilation</p>
-            </div>
+          <div class="album-info">
+            <h4>RM – Indigo</h4>
+            <p>2022 · Album</p>
           </div>
         </div>
-      </div>
-      <div class="tab-content" id="tab-solo">
-        <div class="album-grid">
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/401" alt="Indigo" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>RM – Indigo</h4>
-              <p>2022 · Album</p>
-            </div>
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/402" alt="D-Day" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
           </div>
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/402" alt="D-Day" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>Suga – D-Day</h4>
-              <p>2023 · Album</p>
-            </div>
+          <div class="album-info">
+            <h4>Suga – D-Day</h4>
+            <p>2023 · Album</p>
           </div>
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/403" alt="Jack In The Box" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>J-Hope – Jack In The Box</h4>
-              <p>2022 · Album</p>
-            </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/403" alt="Jack In The Box" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
           </div>
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/404" alt="FACE" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>Jimin – FACE</h4>
-              <p>2023 · Album</p>
-            </div>
+          <div class="album-info">
+            <h4>J-Hope – Jack In The Box</h4>
+            <p>2022 · Album</p>
           </div>
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/405" alt="Layover" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>V – Layover</h4>
-              <p>2023 · Album</p>
-            </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/404" alt="FACE" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
           </div>
-          <div class="album-card animate-on-scroll">
-            <div class="album-cover">
-              <img src="http://static.photos/abstract/320x240/406" alt="GOLDEN" loading="lazy">
-              <div class="album-play-overlay"><span>▶</span></div>
-            </div>
-            <div class="album-info">
-              <h4>Jungkook – GOLDEN</h4>
-              <p>2023 · Album</p>
-            </div>
+          <div class="album-info">
+            <h4>Jimin – FACE</h4>
+            <p>2023 · Album</p>
+          </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/405" alt="Layover" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
+          </div>
+          <div class="album-info">
+            <h4>V – Layover</h4>
+            <p>2023 · Album</p>
+          </div>
+        </div>
+        <div class="album-card animate-on-scroll">
+          <div class="album-cover">
+            <img src="http://static.photos/abstract/320x240/406" alt="GOLDEN" loading="lazy">
+            <div class="album-play-overlay"><span>▶</span></div>
+          </div>
+          <div class="album-info">
+            <h4>Jungkook – GOLDEN</h4>
+            <p>2023 · Album</p>
           </div>
         </div>
       </div>
@@ -522,7 +638,7 @@
         </div>
         <div class="achievement-card animate-on-scroll">
           <div class="achievement-icon">💜</div>
-          <div class="achievement-number" data-target="45">0</div>
+          <div class="achievement-number" data-target="50+">0</div>
           <div class="achievement-label">Million Albums Sold (2023)</div>
           <div class="achievement-glow"></div>
         </div>
