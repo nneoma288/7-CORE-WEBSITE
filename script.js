@@ -517,6 +517,30 @@
       }
     });
   
+    /* ---------- Theme Toggle ---------- */
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+  
+    // Update the icon based on current theme state
+    function updateThemeIcon() {
+      const isLight = document.documentElement.classList.contains('light-mode');
+      if (themeIcon) {
+        themeIcon.textContent = isLight ? '☀️' : '🌙';
+      }
+    }
+  
+    // Set correct icon on page load
+    updateThemeIcon();
+  
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('light-mode');
+        const isLight = document.documentElement.classList.contains('light-mode');
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        updateThemeIcon();
+      });
+    }
+  
     /* ---------- Smooth Scroll for Anchor Links ---------- */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
